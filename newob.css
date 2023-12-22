@@ -1,0 +1,62 @@
+  div.page {
+	width: 90vw //70em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td.container {
+    height: 20px;
+}
+
+BODY { font-family: Verdana, Arial, Helvetica, sans-serif; font-size:small; background-color: #fdfdfd; color: #000000 ; text-color: #000000}
+  P  { font-family: Verdana, Arial, Helvetica, sans-serif; font-size:100%; color: #000000;  text-align:justify; }
+  span  { font-family: Verdana, Arial, Helvetica, sans-serif; font-size:100%; color: #000000;}
+  BLOCKQUOTE { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: normal; font-weight: Normal; color: #000000;}
+  UL  { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: xx-small; font-weight: Normal; color: #000000;}
+  OL  { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: xx-small; font-weight: Normal; color: #000000;}
+  DL  { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: x-small; font-weight: Normal; color: #000000;}
+  TD  {  font-family: Verdana, Arial, Helvetica, sans-serif; text-align:justify; font-size:100%; valign:top;     color: black; text-color: black;}
+  div {max-width: device-width;}
+   table {max-width: 100vw; cellspacing: 3;}
+   td {height: 27px;vertical-align: top; }
+  
+  H6 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 70%; font-weight: normal; color:  #000000;}
+  H5 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14pt; font-weight: BOLD; color: black; background-color: #0092BB}
+  H4 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: BOLD; color: black; background-color: #0092BB}
+  H3 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 100%; font-weight: bold; color: #000000;}
+  H2 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 100%; font-weight: bold; color: #000000;}
+  H1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 100%; font-weight: bold; color: #000000;}
+  A:Active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size:normal; font-weight: normal; color: #000000; text-decoration: None;}
+  A:Link { font-family: Verdana, Arial, Helvetica, sans-serif;  font-size:normal; font-weight: normal; color: #000000; text-decoration: None;}
+  A:Visited { font-family: Verdana, Arial, Helvetica, sans-serif; font-size:normal; font-weight: normal; color: #000000; text-decoration: None;}
+  A:hover { font-family: Verdana, Arial, Helvetica, sans-serif;  font-size:normal; font-weight: normal; color: #707070; text-decoration: None;}
+//  LI { list-style-image: url(.../blank.gif) ; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: Normal; color: #000000;}
+//  LI.big { list-style-image: url(.../blank.gif) ;}
+//  LI.medium { list-style-image: url(.../blank.gif) ;}
+//  LI.small { list-style-image: url(.../blank.gif) ;}
+
+
+function makestyle(bgcolour) {
+var stylestring="";
+ stylestring += "\<style type\=\"text\/css\"\>";
+stylestring += "  BODY \{ font-family: Verdana,Arial,Helvetica\; font-size: normal\; background-color: "+ bgcolour + "\; color: \#000000 \; text-color: \#000000\} ";
+stylestring += "  P \{ font-family: Verdana,Arial,Helvetica\; font-size: normal\; color: \#000000\;\} ";
+stylestring += "  BLOCKQUOTE \{ font-family: Verdana,Arial,Helvetica\; font-size: normal\; font-weight: Normal\; color: \#000000\;\} ";
+stylestring += "  UL \{ font-family: Verdana,Arial,Helvetica\; font-size: xx-small\; font-weight: Normal\; color: \#000000\;\} ";
+stylestring += "  OL \{ font-family: Verdana,Arial,Helvetica\; font-size: xx-small\; font-weight: Normal\; color: \#000000\;\} ";
+stylestring += "  DL \{ font-family: Verdana,Arial,Helvetica\; font-size: x-small\; font-weight: Normal\; color: \#000000\;\} ";
+stylestring += "  TD \{ font-family: Verdana,Arial,Helvetica\; font-size: x-small\;  color: black\; text-color: black\} ";
+stylestring += "  H6 \{ font-family: Verdana,Arial,Helvetica\; font-size: 24pt\; font-weight: BOLD\; color: black\} ";
+stylestring += "  H5 \{ font-family: Verdana,Arial,Helvetica\; font-size: 14pt\; font-weight: BOLD\; color: black\; background-color: \#0092BB\} ";
+stylestring += "  H4 \{ font-family: Verdana,Arial,Helvetica\; font-size: 12pt\; font-weight: BOLD\; color: black\; background-color: \#0092BB\} ";
+stylestring += "  H3 \{ font-family: Verdana,Arial,Helvetica\; font-size: 11pt\; font-weight: BOLD\; color: black\; background-color: \#0092BB\} ";
+stylestring += "  H2 \{ font-family: Verdana,Arial,Helvetica\; font-size: 10pt\; font-weight: Normal\; color: \#B4DCDC\;\} ";
+stylestring += "  H1 \{ font-family: Verdana,Arial,Helvetica\; font-size: 10pt\; font-weight: Normal\; color: \#B4DCDC\;\} ";
+
+stylestring += "  a\:active \{ font-family: Verdana,Arial,Helvetica\;  font-size:normal; font-weight: normal; color: #000000; text-decoration: None;\}";
+stylestring += "  a\:hover \{ font-family: Verdana,Arial,Helvetica\;  font-size: normal\; font-weight: normal\; color: \#000000\; text-decoration: None\;\}";
+stylestring += "  a\:link \{ font-family: Verdana,Arial,Helvetica\; font-size: normal\; font-weight: normal\; color: \#000000\; text-decoration: None\;\}";
+stylestring += "  a\:visited \{ font-family: Verdana,Arial,Helvetica\; font-size: normal\; font-weight: normal\; color: \#000000\; text-decoration: None\;\}";
+ stylestring += "\<\/style\>";
+return stylestring;
+}
